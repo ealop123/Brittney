@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+	<title>Brittney</title>
+	<meta charset = "UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="styling.css">
+</head>
+<body>
+	<div class="navbar" id="myNavbar">
+		<a href="#Me">Me</a>
+		<a href="#Journey">Journey</a>
+		<a href="#Recommendations">Recommendations</a>
+		<a href="#Contact">Contact</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+	<div id="Me">
+		<div>
+			<img class="topPic" src="img\mainPic.jpg">
+		</div>
+		<div>
+			<h1>All about me.</h1>
+		</div>
+	</div>
+	<script>
+	/* Toggle between adding and removing the "responsive" class to the navbar when the user clicks on the icon */
+	function myFunction() {
+		var x = document.getElementById("myNavbar");
+		if (x.className === "navbar") {
+			x.className += " responsive";
+		} else {
+			x.className = "navbar";
+		}
+	}
+	</script>
+
+</body>
+</html>
